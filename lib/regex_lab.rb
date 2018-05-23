@@ -28,7 +28,7 @@ end
 
 def valid_phone_number?(phone)
   binding.pry
-  if phone.match(/[(]?\d{3,10}[)]?[-]?\d{3,10}[-]?\d{3,10}/).nil?
+  if phone.match(/[(]?\d{3,10}[)]?[-]?\s?\d{3,10}[-]?\s?\d{3,10}/).nil?
     return false
   else
     return true
